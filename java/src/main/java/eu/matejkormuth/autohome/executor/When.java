@@ -132,7 +132,7 @@ public final class When {
     public Threshold threshold(int threshold) {
         Threshold threshold1 = new Threshold(threshold);
         threshold1.parent = this;
-        this.updates(threshold1);
+        this.stateChanged(threshold1);
         return threshold1;
     }
 
